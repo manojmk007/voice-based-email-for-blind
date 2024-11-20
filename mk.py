@@ -14,7 +14,7 @@ kmeans=KMeans(3)
 kmeans.fit(x)
 identified_clusters=kmeans.fit_predict(x)
 data_with_clusters=data.copy()
-data_with_clusters['Clusters']=identifed_clusters
+data_with_clusters['Clusters']=identified_clusters
 plt.scatter(data_with_clusters['Longitude'],data_with_clusters['Latitude'],
 c=data_with_clusters['Clusters'],cmap='rainbow')
 plt.xlabel("Longitude")
