@@ -12,7 +12,7 @@ plt.show()
 x=data.iloc[:,1:3]
 kmeans=KMeans(3)
 kmeans.fit(x)
-identified_clusters=kmeans.fit_predit(x)
+identified_clusters=kmeans.fit_predict(x)
 data_with_clusters=data.copy()
 data_with_clusters['Clusters']=identifed_clusters
 plt.scatter(data_with_clusters['Longitude'],data_with_clusters['Latitude'],
