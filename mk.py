@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-import metplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 data=pd.read_csv(r"file_path")
 plt.scatter(data['Longitude'],data['Latitude'])
