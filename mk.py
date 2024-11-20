@@ -9,7 +9,7 @@ plt.ylim(-90,90)
 plt.xlabel("Longtitude")
 plt.ylabel("Latitude")
 plt.show()
-x=data.iloc(:,1:3)
+x=data.iloc[:,1:3]
 kmeans=KMeans(3)
 kmeans.fit(x)
 identified_clusters=kmeans.fit_predit(x)
